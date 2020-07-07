@@ -1,15 +1,15 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "shore party - blog of Tamás Deme",
+  "url": "https://shoreparty.org/",
+  "description": "ethical considerations of high frequency econometrics and decision making",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "ethical considerations of high frequency econometrics and decision making",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://shoreparty.org/"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Tamás Deme",
+    "email": "shoreparty@tomzorz.me"
   }
 }
