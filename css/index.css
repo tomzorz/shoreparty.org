@@ -224,3 +224,106 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link:visited {
   color: #aaa;
 }
+
+/* -------------------------------- CUSTOM STUFF -------------------------------- */
+
+/* fonts */
+
+html, body {
+  font-family: 'Crimson Text', Garamond, serif;
+  color: black;
+  font-size: 22px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, h7, a.postlist-link, header {
+  font-family: 'Futura Md BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a.tag {
+  font-family: 'Futura BdCn BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+/* header */
+
+header {
+  border-image: linear-gradient(to right,rgb(40,93,165), rgb(192,60,64)) 100% 1;
+  border-bottom-width: 0.5rem;
+}
+
+header .holder {
+  max-width: 1156px;
+  margin: 0 auto;
+}
+
+header .head-desc {
+  clear: both;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Futura Bk BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header ul.nav li {
+  margin-right: 0.5rem;
+}
+
+header ul.nav li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+header ul.nav li.nav-item-active {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* main content */
+
+main {
+  max-width: 1156px;
+  margin: 0 auto;
+}
+
+/* post list */
+
+ol.postlist li.postlist-item {
+  margin-bottom: 2rem;
+}
+
+ol.postlist li.postlist-item p {
+  margin: 0 0 0.5rem 0;
+}
+
+/* tags */
+
+a.tag {
+  border-radius: 0;
+  background-color: #243b5e;
+  margin: 0 0.5rem 0 0;
+}
+
+/* post */
+
+main.tmpl-post p, main.tmpl-post h1, main.tmpl-post h2, main.tmpl-post h3, main.tmpl-post ul, main.tmpl-post ol {
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+main.tmpl-post figure, main.tmpl-post figure img {
+  text-align: center;
+  max-width: none;
+}
+
+main.tmpl-post p.closeout {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main.tmpl-post figcaption {
+  font-style: italic;
+  font-size: 0.8rem;
+}

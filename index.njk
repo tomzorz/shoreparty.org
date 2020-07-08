@@ -4,10 +4,15 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
+<h1>👋 Hi, I'm Tamás. Welcome to my blog.</h1> 
 
-<h1>Latest 3 Posts</h1>
+<p>You can find out more about me on <a href="https://tomzorz.me">my website</a>, and you can also find me <a href="https://twitter.com/tomzorz_">on twitter</a>.</p>
 
-{% set postslist = collections.posts | head(-3) %}
+<p>Anyone who knows what the blog description is a referencing gets a cookie.</p>
+
+<h2>The last 10 posts</h2>
+
+{% set postslist = collections.posts | head(-10) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
