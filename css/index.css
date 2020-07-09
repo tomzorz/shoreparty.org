@@ -287,7 +287,23 @@ main {
   margin: 0 auto;
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 /* post list */
+
+ol.postlist li::before {
+  display: inline;
+  background-color: rgb(192,60,64);
+  font-family: 'Futura BdCn BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+ol.postlist li a.postlist-link {
+  display: inline;
+}
 
 ol.postlist li.postlist-item {
   margin-bottom: 2rem;
@@ -301,7 +317,7 @@ ol.postlist li.postlist-item p {
 
 a.tag {
   border-radius: 0;
-  background-color: #243b5e;
+  background-color: rgb(40,93,165);
   margin: 0 0.5rem 0 0;
 }
 
@@ -326,4 +342,19 @@ main.tmpl-post p.closeout {
 main.tmpl-post figcaption {
   font-style: italic;
   font-size: 0.8rem;
+}
+
+/* mobile */
+
+@media screen and (max-width: 1156px) {
+  main.tmpl-post figure {
+    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
+  }
+
+  main.tmpl-post figure, main.tmpl-post figure img {
+    text-align: center;
+    max-width: 100%;
+  }
 }
