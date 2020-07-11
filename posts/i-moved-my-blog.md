@@ -1,6 +1,6 @@
 ---
 title: I moved my blog
-description: "Back in 2015 (?, I think...) I moved my blog to Medium, which promised to be a clean and fast blogging platform. It's now 2020 and Medium is everything but that: popups, nag screens and "please subscribe" CTAs everywhere. So I moved."
+description: "Back in 2015 (?, I think...) I moved my blog to Medium, which promised to be a clean and fast blogging platform. It's now 2020 and Medium is everything but that: popups, nag screens and \"please subscribe\" CTAs everywhere. So I moved."
 date: 2020-07-09
 tags:
   - blog
