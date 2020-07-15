@@ -8,7 +8,7 @@ tags:
   - development
   - dotnet
   - csharp
-  - open-source
+  - open source
 layout: layouts/post.njk
 ---
 I’m working on a project where a .net core backend is used as a server to provide data for multiple Unity clients. To ease development and usage in Unity it’d great if we could use the built-in network discovery module, so that’s what I did.

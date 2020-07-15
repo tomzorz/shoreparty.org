@@ -7,7 +7,7 @@ tags:
   - dotnet
   - csharp
   - ndepend
-  - static-analysis
+  - static analysis
   - showcase
 layout: layouts/post.njk
 ---
