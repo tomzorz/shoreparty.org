@@ -15,7 +15,7 @@ A quick disclaimer before venturing in: I’m not a legal expert, and the follow
 
 ### What is GDPR, and why should you care?
 
-GDPR, or General Data Protection Regulation is the new European Union law/ regulation covering data protection. It’s replacing the old Data Protection Directive from 1995, and it aims to give control back to the users while also unifying the regulation within the EU. **If you write software that anyone residing within the EU can use, it affects you. Citizenship or nationality do not matter. **Not complying with the regulation can result in a wide array of consequences, ranging from warnings in writings to a fine up to €20 million or up to 4% to annual worldwide turnover of the preceding financial year of an enterprise.
+GDPR, or General Data Protection Regulation is the new European Union law/ regulation covering data protection. It’s replacing the old Data Protection Directive from 1995, and it aims to give control back to the users while also unifying the regulation within the EU. **If you write software that anyone residing within the EU can use, it affects you. Citizenship or nationality do not matter.** Not complying with the regulation can result in a wide array of consequences, ranging from warnings in writings to a fine up to €20 million or up to 4% to annual worldwide turnover of the preceding financial year of an enterprise.
 
 ### What is Personal Data?
 
