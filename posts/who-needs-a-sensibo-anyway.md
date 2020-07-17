@@ -1,7 +1,7 @@
 ---
 title: Who needs a Sensibo anyway?
 description: "If you're reading this post you're probably in the target audience for a certain Instagram ad alongside with me, advertising Sensibo: a magical IoT gadget that turns your \"dumb\" air conditioner into a \"smart\" one. This is the story of me not buying one."
-date: 2020-07-13
+date: 2020-07-18
 tags:
   - iot
   - reverse engineering
