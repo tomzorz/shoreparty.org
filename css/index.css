@@ -331,7 +331,7 @@ main.tmpl-post p, main.tmpl-post h1, main.tmpl-post h2, main.tmpl-post h3, main.
 
 main.tmpl-post figure, main.tmpl-post figure img {
   text-align: center;
-  max-width: none;
+  max-width: 100%;
 }
 
 main.tmpl-post p.closeout {
@@ -342,6 +342,12 @@ main.tmpl-post p.closeout {
 main.tmpl-post figcaption {
   font-style: italic;
   font-size: 0.8rem;
+}
+
+main.tmpl-post code {
+  font-size: 20px;
+  /* background-color: #f1f1f1;
+  padding: 0 0.2rem; */
 }
 
 /* mobile */
