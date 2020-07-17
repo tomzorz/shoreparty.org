@@ -100,7 +100,7 @@ After getting my capture mode up and running, I started going over all the vario
 
 ![Cleaned up IR recording](/img/wnasa/11.png)
 
-Time for step three, making sense of the pulses. In the text file we can already see that we deal with 140 signals per command, and that this is definitely *not* standard NEC Protocol, as we have a long pause in the middle and at the end. Thankfully "not standard" doesn't mean "completely different", so I jumped into Visual Studio and whipped up PulseWrangler: a simple c# command line tool that'd help me make sense of the timings. In the NEC IR protocol we have 3 different signal pairs to make sense of:
+Time for step two, making sense of the pulses. In the text file we can already see that we deal with 140 signals per command, and that this is definitely *not* standard NEC Protocol, as we have a long pause in the middle and at the end. Thankfully "not standard" doesn't mean "completely different", so I jumped into Visual Studio and whipped up PulseWrangler: a simple c# command line tool that'd help me make sense of the timings. In the NEC IR protocol we have 3 different signal pairs to make sense of:
 
 - 9000µs long pulse followed up by 4500µs pause: this indicates the beginning of a signal block,
 - ~600µs long pulse followed up by ~600µs pause: this indicates a binary zero signal,
