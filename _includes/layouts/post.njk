@@ -11,3 +11,15 @@ templateClass: tmpl-post
 <p>💌 share this post on <a href="http://twitter.com/share?text=From @tomzorz_'s blog: {{ title }}&url=https://shoreparty.org{{ page.url }}">twitter</a>, <a href="http://www.reddit.com/submit?url=https://shoreparty.org{{ page.url }}">reddit</a> or <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://shoreparty.org{{ page.url }}">linkedin</a></p>
 
 <p><a href="{{ '/' | url }}">← Home</a></p>
+
+<script>
+    const date11ty = '{{ page.date }}';
+    const date = new Date(date11ty);
+    const dateNow = new Date();
+    var diff = dateNow - date;
+    var diffDays = diff / (1000 * 60 * 60 * 24);
+    if(diffDays > 365) {
+        const main = document.getElementById('main');
+        main.insertAdjacentHTML('afterbegin', '<p class="out-of-date-warning">⚠ This post is more than a year old, its contents might not be up to date.</p>')
+    }
+</script>

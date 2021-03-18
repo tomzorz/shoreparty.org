@@ -6,11 +6,14 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const implicitFigures = require("markdown-it-implicit-figures");
+const { html5Media } = require('markdown-it-html5-media');
+const readingTime = require('eleventy-plugin-reading-time');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(readingTime);
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -51,6 +54,9 @@ module.exports = function(eleventyConfig) {
     permalink: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
+  }).use(html5Media, {
+    videoAttrs: 'class="video-embed" autoplay controls muted loop',
+    audioAttrs: 'class="audio-embed" data-collapse'
   }).use(implicitFigures, {
     figcaption: true
   });

@@ -323,13 +323,13 @@ a.tag {
 
 /* post */
 
-main.tmpl-post p, main.tmpl-post h1, main.tmpl-post h2, main.tmpl-post h3, main.tmpl-post ul, main.tmpl-post ol {
+main.tmpl-post p, main.tmpl-post h1, main.tmpl-post h2, main.tmpl-post h3, main.tmpl-post h4, main.tmpl-post ul, main.tmpl-post ol {
   max-width: 680px;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
 
-main.tmpl-post figure, main.tmpl-post figure img {
+main.tmpl-post figure, main.tmpl-post figure img, main.tmpl-post video {
   text-align: center;
   max-width: 100%;
 }
@@ -350,6 +350,13 @@ main.tmpl-post code {
   padding: 0 0.2rem; */
 }
 
+main.tmpl-post .out-of-date-warning {
+  background: lightcoral;
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+}
+
 /* mobile */
 
 @media screen and (max-width: 1156px) {
@@ -359,7 +366,7 @@ main.tmpl-post code {
     margin-inline: 0;
   }
 
-  main.tmpl-post figure, main.tmpl-post figure img {
+  main.tmpl-post figure, main.tmpl-post figure img, main.tmpl-post video {
     text-align: center;
     max-width: 100%;
   }

@@ -30,6 +30,9 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
-    "markdown-it-implicit-figures": "0.10.0"
-  }
+    "markdown-it-implicit-figures": "0.10.0",
+    "markdown-it-html5-media": "^0.7.0",
+    "eleventy-plugin-reading-time": "0.0.1"
+  },
+  "dependencies": {}
 }
