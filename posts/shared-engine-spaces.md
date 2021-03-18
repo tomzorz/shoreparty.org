@@ -16,6 +16,10 @@ tags:
   - lumin os
 layout: layouts/post.njk
 ---
+As we're heading into the brave new world of mixed reality, one of the larger software issues facing everyone has yet to be addressed: shared engine spaces.
+
+## Pancake problems
+
 Users of traditional "2D" or "pancake" operating system user interfaces have long expected multiple different rendering engine powered applications to work together simultaneously. I can easily run a game using Unreal Engine with e.g. DirectX11 backing it in a window next to an enterprise app using Vulkan, while both are eventually placed on screen by Windows's DWM/Composition engine which is probably using DirectX12. And if I were to launch a Unity3D powered app on top of this, it'd just work as well. 
 
 ![Unreal Engine, WPF, Vulkan, UWP, DX12 playing along](/img/mrosengine/desktop.png)
@@ -28,9 +32,11 @@ Mixing multiple rendering engines within a single application is heavily depende
 
 There's also space to improve in the balanced **sharing of resources** available. However fast computer you might build, a game loading will probably make your youtube playback in a different window start freezing up for a bit. Based on my observations, Windows seems to prioritize the foreground application - which does make sense in most use cases.
 
-I chose these two pain points specifically as in my opinion they are critical to a fully capable 3D / mixed reality operating system's user interface. Let's take a look at what solutions we have today:
+I chose these two pain points specifically as in my opinion they are critical to a fully capable 3D / mixed reality operating system's user interface. Let's take a look at what solutions we have today.
 
-**Oculus Home / Windows Mixed Reality**
+## Leaving breakfast foods behind
+
+#### Oculus Home / Windows Mixed Reality
 
 Both of the above simply don't solve the issue, at all: they all guarantee exclusivity to the foreground 3D application the user is interacting with and don't let developers create shared 3D experiences. The only exception (and imagine me using air-quotes here) to this is application icons: developers can provide 3D content in a .gltf file to act as a 3D representation of the application in the users' home space.
 
@@ -42,7 +48,7 @@ On the Hololens 2 it's now possible to open and interact with 2D apps while bein
 
 ![HoloLens 2D app overlay in a 3D app](/img/mrosengine/winmr.mp4)
 
-**Lumin OS**
+#### Lumin OS
 
 Magic Leap's operating system is the only OS that at least has an approach to this currently. Applications using their own app building environment can exist in the same shared 3D space, as this example shows me having their browser and 3D gallery open at the same time: 
 
@@ -50,7 +56,7 @@ Magic Leap's operating system is the only OS that at least has an approach to th
 
 With that said, this only works for their own apps… apps using a 3rd party engine like Unity are still only capable of running in exclusive mode.
 
-**SteamVR**
+#### SteamVR
 
 Let's include this one, just for completeness's sake. There aren't multiple 3D experiences allowed here either, BUT I think it's important to mention that using their SDK allows great integrations to be made, [e.g. a twitch chat viewer that's attached to the backside of the controller](https://store.steampowered.com/app/586210/OVRdrop/). It doesn't respect perspectives/foreground-background either, but it's the only platform where 3rd parties are allowed to do this.
 
