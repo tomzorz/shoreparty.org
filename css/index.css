@@ -357,6 +357,13 @@ main.tmpl-post .out-of-date-warning {
   border-radius: 5px;
 }
 
+main.tmpl-post .post-info {
+  font-size: 0.85em;
+  padding: 3px 0;
+  border-top: 1px dashed #e0e0e0;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
 /* mobile */
 
 @media screen and (max-width: 1156px) {
