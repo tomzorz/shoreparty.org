@@ -31,6 +31,8 @@ Unlike all the other extensions I'll list, this one needs a [paid subscription](
 
 Microsoft DevLab's extension bundle is a true gem: it includes ~10 smaller extensions (that you can install separately if you'd like) that add small but handy enhancements to VS. My two favorites are [Match Margin](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MatchMargin2022) that highlights other occurrences of the selected text in the editor scrollbar, and [Shrink Empty Lines](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.SyntacticLineCompression2022) that saves screen space by shrinking empty lines vertically, letting me see more of the actual code.
 
+![Notice the purple dots in the scrollbar map](/img/vsext/matchmargin.png)
+
 💾 **VS2022** https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.ProductivityPowerPack2022
 💾 **VS2017 to VS2019** https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.ProductivityPowerPack2017
 
@@ -38,11 +40,15 @@ Microsoft DevLab's extension bundle is a true gem: it includes ~10 smaller exten
 
 This extension by Nikolay Balakin adds coloring to the Build and Output windows, making them a lot easier to digest.
 
+![Yellow warnings, green successes](/img/vsext/coloroutput.png)
+
 💾 **VS2012 to VS2022** https://marketplace.visualstudio.com/items?itemName=NikolayBalakin.Outputenhancer
 
 ### File Icons
 
 Mads Kristensen is a VS giant by day and apparently by night too - while working on VS itself at Microsoft (at least at the time of writing this) [he has also authored over a 100+ extensions for it](https://marketplace.visualstudio.com/publishers/MadsKristensen). The one I'm recommending here adds a bunch of new icons to the Solution Explorer, so various non-code related files are more easily identifiable.
+
+![SQLite gets an icon](/img/vsext/icons.png)
 
 💾 **VS2017 to VS2022** https://marketplace.visualstudio.com/items?itemName=MadsKristensen.FileIcons
 
@@ -52,6 +58,8 @@ Mads Kristensen is a VS giant by day and apparently by night too - while working
 
 KhaosPrinz's extension might be my favorite tiny enhancement to VS. Whenever the beginning of a block is not visible, it adds little tags to the block's end reminding you of their beginning.
 
+![See the end of lines 226 and 236](/img/vsext/endtag.png)
+
 A bit of extra history _as a treat_: I first came across this feature in the VSCommands extension, but sadly both the extension and the company behind it disappeared around 2014 - with no upgrades available to new VS versions.
 
 💾 **VS2015 to VS2022** https://marketplace.visualstudio.com/items?itemName=KhaosPrinz.CodeBlockEndTag
@@ -60,12 +68,16 @@ A bit of extra history _as a treat_: I first came across this feature in the VSC
 
 CodeLens is a much loved VS feature that adds a little extra context to classes, interfaces and methods. Thankfully it's also extendable, so now next to the default source control and reference information we can get a little more information about the selected element itself. We can thank Luiz Fernando DINATO for authoring this one.
 
+![](/img/vsext/cicl.png)
+
 💾 **VS2022** https://marketplace.visualstudio.com/items?itemName=LuizFernandoDINATO.CICodeLensInfo2022
 💾 **VS2019** https://marketplace.visualstudio.com/items?itemName=LuizFernandoDINATO.cicodelensinfoextension
 
 ### microscope
 
 Robert Hofmann's extension adds a few windows and a CodeLens bit that allow us to see the generated IL of methods, lambdas, closures and more. As Robert phrases on the extension's page _"It's mostly useful for learning and getting a better understanding of how C# works internally"_ and I completely agree. Trying to be smarter than the compiler is often futile, but at least it's nice to see what it's doing.
+
+![](/img/vsext/il.png)
 
 💾 **VS2022** https://marketplace.visualstudio.com/items?itemName=bert.microscope
 
@@ -101,6 +113,8 @@ This extension is also available for older VS versions but you'll have to manual
 ### Trailing Whitespace Visualizer
 
 The 2nd extension in my list from Mads Kristensen, this time - as the title suggests - to highlight trailing whitespaces in your code. They are invisible and annoying by default - this helps with getting rid of them.
+
+![](/img/vsext/ws.png)
 
 💾 **VS2017 to VS2022** https://marketplace.visualstudio.com/items?itemName=MadsKristensen.TrailingWhitespaceVisualizer
 
