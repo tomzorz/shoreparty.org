@@ -1,7 +1,7 @@
 ---
 title: Shared Engine Spaces in the age of Mixed Reality Operating Systems
 description: "As we're heading into the brave new world of mixed reality, one of the larger software issues facing everyone has yet to be addressed: shared engine spaces."
-date: 2021-03-18
+date: 2021-04-18
 tags:
   - mixed reality
   - virtual reality
@@ -20,7 +20,7 @@ As we're heading into the brave new world of mixed reality, one of the larger so
 
 ## Pancake problems
 
-Users of traditional "2D" or "pancake" operating system user interfaces have long expected multiple different rendering engine powered applications to work together simultaneously. I can easily run a game using Unreal Engine with e.g. DirectX11 backing it in a window next to an enterprise app using Vulkan, while both are eventually placed on screen by Windows's DWM/Composition engine which is probably using DirectX12. And if I were to launch a Unity3D powered app on top of this, it'd just work as well. 
+Users of traditional "2D" or "pancake" operating system user interfaces have long expected multiple different rendering engine powered applications to work together simultaneously. I can easily run a game using Unreal Engine with e.g. DirectX11 backing it in a window next to an enterprise app using Vulkan, while both are eventually placed on screen by Windows's DWM/Composition engine which is probably using DirectX12. And if I were to launch a Unity3D powered app on top of this, it'd just work as well.
 
 ![Unreal Engine, WPF, Vulkan, UWP, DX12 playing along](/img/mrosengine/desktop.png)
 
@@ -50,7 +50,7 @@ On the Hololens 2 it's now possible to open and interact with 2D apps while bein
 
 #### Lumin OS
 
-Magic Leap's operating system is the only OS that at least has an approach to this currently. Applications using their own app building environment can exist in the same shared 3D space, as this example shows me having their browser and 3D gallery open at the same time: 
+Magic Leap's operating system is the only OS that at least has an approach to this currently. Applications using their own app building environment can exist in the same shared 3D space, as this example shows me having their browser and 3D gallery open at the same time:
 
 ![Lumin OS multiple 3D apps](/img/mrosengine/magicleap.mp4)
 
@@ -60,7 +60,7 @@ With that said, this only works for their own apps… apps using a 3rd party eng
 
 Let's include this one, just for completeness's sake. There aren't multiple 3D experiences allowed here either, BUT I think it's important to mention that using their SDK allows great integrations to be made, [e.g. a twitch chat viewer that's attached to the backside of the controller](https://store.steampowered.com/app/586210/OVRdrop/). It doesn't respect perspectives/foreground-background either, but it's the only platform where 3rd parties are allowed to do this.
 
-## Where to next? 
+## Where to next?
 
 While there'll always be applications that demand and deserve an exclusive 3D space, e.g. games, it's completely realistic to imagine...
 
@@ -78,7 +78,7 @@ From now on let's jump into the **theorycrafting zone**, and try imagine how the
 
 #### 1. No solution whatsoever
 
-Engine developers stay hostile to each other, platforms and operating systems stay hostile to each other... no interop, no cross operation - maybe only within the operating system's own. 
+Engine developers stay hostile to each other, platforms and operating systems stay hostile to each other... no interop, no cross operation - maybe only within the operating system's own.
 
 I don't think this will be the case. We've seen _some_ historical examples for this, but I think it's a different time now, and if anything, UX demands will make it happen.
 
@@ -88,7 +88,7 @@ I don't think this will be the case. We've seen _some_ historical examples for t
 
 Imagine a wondrous land where the [XKCD Standards comic](https://xkcd.com/927/) isn't real, and somehow every interested party manages to agree on a common interface, that allows them to share:
 
-- lights, 
+- lights,
 - shadows,
 - textures / materials,
 - camera settings
