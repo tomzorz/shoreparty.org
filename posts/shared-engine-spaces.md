@@ -1,7 +1,8 @@
 ---
 title: Shared Engine Spaces in the age of Mixed Reality Operating Systems
 description: "As we're heading into the brave new world of mixed reality, one of the larger software issues facing everyone has yet to be addressed: shared engine spaces."
-date: 2021-04-18
+date: 2021-03-18
+updated: 2021-04-21
 tags:
   - mixed reality
   - virtual reality
