@@ -1,6 +1,6 @@
 ---
 title: Tiny Tools of the Trade - Part I.
-description: "Small software solutions that are big time savers, for small everyday problems that are big annoyances."
+description: "Small software solutions that are big time savers, for small everyday problems that are big annoyances. This time let's learn about yt-dlp, RipMe and ffmpeg."
 date: 2022-04-26
 tags:
   - software
@@ -28,4 +28,4 @@ Underlying a significant amount of products that deal with media nowadays, you'l
 
 Two extra capabilities are also worth mentioning: 1) because ffmpeg is a terminal based tool, it's easy to do scripting to mass process large batches of media; and 2) many actions, like trimming or replacing audio tracks can be done without re-encoding the entire media file, which makes these tasks _significantly_ faster to do compared to re-rendering in a "proper" video editor.
 
-To make sure I don't scare anyone away, here's a simple example making an audio file out of a video: `ffmppeg -i never.mkv never.mp3` - simple, right? For more advanced examples keep an eye out on this blog. I've been collecting my own ffmpeg scripts and templates, and I'm planning to share them in a few follow-up posts here soon™.
+To make sure I don't scare anyone away, here's a simple example making an audio file out of a video: `ffmpeg -i never.mkv never.mp3` - simple, right? For more advanced examples keep an eye out on this blog. I've been collecting my own ffmpeg scripts and templates, and I'm planning to share them in a few follow-up posts here soon™.
