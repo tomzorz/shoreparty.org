@@ -11,11 +11,11 @@ tags:
 layout: layouts/post.njk
 ---
 
-In this first installment of ffmpeg tutorials, let's take a look at trimming (something that makes a video smaller), cropping (something that makes a video smaller) and also, making videos smaller. These three might be the most often needed usecases I encounter. In the following examples I'll always use `input.mp4` and `output.mp4` as input and output respectively - just replace these with your actual filenames. The `-i` flag specifies _an_ input, and they generally always come in the beginning. The last parameter is always the output name, conveniently no flag needed for that.
+In this first installment of ffmpeg tutorials, let's take a look at trimming (something that makes a video smaller), cropping (something that makes a video smaller) and also, making videos smaller. These three might be the most often needed use cases I encounter. In the following examples I'll always use `input.mp4` and `output.mp4` as input and output respectively - just replace these with your actual filenames. The `-i` flag specifies _an_ input, and they generally always come in the beginning. The last parameter is always the output name, conveniently no flag needed for that.
 
 ## Trimming
 
-Trimming lets us slice out a desired timespan from a video, and with ffmpeg we can do this without re-encoding the video - this means that this action is almost "instant", opposed to regular video editors. The time trimming will take only depends on your storage speed, copying the necessary parts into a new file.
+Trimming lets us slice out a desired timespan from a video, and with ffmpeg we can do this without re-encoding it - this means that this action is almost "instant", opposed to regular video editors. The time trimming will take only depends on your storage speed, copying the necessary parts into a new file.
 
 To trim a video, call:
 
@@ -33,7 +33,7 @@ You can skip either the `-ss ...` or the `-to ...` parts if you don't want to cu
 
 ## Cropping
 
-Cropping works exactly as you'd crop pictures - it lets you keep the desired area of the frame, and throw away everything else. To crop videos, we'll use the `-filter:v` flag - a video filter, specifically the `crop` one:
+Cropping works exactly as you'd crop pictures - it lets you keep the desired area of the frame and throw away everything else. To crop videos, we'll use the `-filter:v` flag - a video filter, specifically the `crop` one:
 
 ```
 ffmpeg -i input.mp4 -filter:v "crop=out_w:out_h:x:y" output.mp4
@@ -63,9 +63,9 @@ Important to remember, that most of these flags and filters can be used in combi
 
 ## Reducing file size
 
-Finally, it's also a very typical task is to reduce a video file's size, preferabily without noticeable change in quality. To do so, we can re-encode videos with high efficiency codecs and / or use different quality settings in them.
+Finally, it's also a very typical task is to reduce a video file's size, preferably without noticeable change in quality. To do so, we can re-encode videos with high efficiency codecs and / or use different quality settings in them.
 
-Typically I would recommend using the H.264 and H.265 codecs to encode things for consumption nowadays. If you're not familiar with codecs, they are the algorithms that turn raw image data (which is huge) into a compressed format (which is much smaller). The more modern a codec is, the less support you might find in consumer devices and software for them, but at the same time they might offer significantly better compression rates for similar quality video. H.264 is supported by almost everything, while H.265 might not be supported yet by your 10 year old smart TV, or your in-laws' old browser that they never updated.
+Typically, I would recommend using the H.264 and H.265 codecs to encode things for consumption nowadays. If you're not familiar with codecs, they are the algorithms that turn raw image data (which is huge) into a compressed format (which is much smaller). The more modern a codec is, the less support you might find in consumer devices and software for them, but at the same time they might offer significantly better compression rates for similar quality video. H.264 is supported by almost everything, while H.265 might not be supported yet by your 10-year-old smart TV, or your in-laws' old browser that they never updated.
 
 To re-encode a video using H.265, call:
 
@@ -83,4 +83,4 @@ Where the options are as follows for both calls:
 
 - `-crf` (which stands for "constant rate factor") is the quality, experiment with values between 24 to 30 for H.265; and 18 to 24 for H.264. A higher CRF value corresponds to lower bitrates, therefore they'll make your video's file size smaller.
 
-If you want to target a specific file size, that's also possible, albeit [significantly more complicated](https://stackoverflow.com/a/29082672/4788286). Thankfully you don't have to understand everything those commands do, you can just replace the few marked parts of the command to match your desired outcome.
+If you want to target a specific file size, that's also possible, albeit [significantly more complicated](https://stackoverflow.com/a/29082672/4788286). Thankfully you don't have to understand everything those commands do: you can just replace the few marked parts of the command to match your desired outcome.
