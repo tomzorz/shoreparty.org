@@ -83,4 +83,6 @@ Where the options are as follows for both calls:
 
 - `-crf` (which stands for "constant rate factor") is the quality, experiment with values between 24 to 30 for H.265; and 18 to 24 for H.264. A higher CRF value corresponds to lower bitrates, therefore they'll make your video's file size smaller.
 
+As you've already guessed, the `-vcodec` flag lets us pick which video codec to use to encode a video. If you'd like to learn a bit more about CRF values, [I would recommend reading the documentation](https://trac.ffmpeg.org/wiki/Encode/H.264).
+
 If you want to target a specific file size, that's also possible, albeit [significantly more complicated](https://stackoverflow.com/a/29082672/4788286). Thankfully you don't have to understand everything those commands do: you can just replace the few marked parts of the command to match your desired outcome.
