@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
 const implicitFigures = require("markdown-it-implicit-figures");
 const { html5Media } = require('markdown-it-html5-media');
 const readingTime = require('eleventy-plugin-reading-time');
@@ -59,7 +60,7 @@ module.exports = function(eleventyConfig) {
     audioAttrs: 'class="audio-embed" data-collapse'
   }).use(implicitFigures, {
     figcaption: true
-  });
+  }).use(markdownItFootnote);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Browsersync Overrides

@@ -9,7 +9,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-This is going to be different. At least "here", on this iteration[^1] of my blog. I've written posts like this before, but the last time that has happened was truly more than a decade ago. And those posts were password protected, and I have no one to give the password to. I thought of writing this post a few weeks ago, but it took me a bit of time to actually get started - I guess the events of last week helped me a little with motivation. 
+This is going to be different. At least "here", on this iteration [^1] of my blog. I've written posts like this before, but the last time that has happened was truly more than a decade ago. And those posts were password protected, and I had no one to give the password to. I thought of writing this post a few weeks ago, but it took me a bit of time to actually get started - I guess the events of last week helped me a little with motivation. 
 
 This is probably not going to be deep, but I am partially writing this _for myself_ so that it is _out there_. It is also most certainly going to be a rambling mess, apologies about that in advance. 
 
@@ -43,8 +43,8 @@ Quoting a fun tiktok I saw yesterday to close this out:
 
 ## Finally, some random shots into the sky
 
-We need more nuance. And the answer, unless you're lying and/or stupid, is almost always **it depends™**.[^2] 
+We need more nuance. And the answer, unless you're lying and/or stupid, is almost always **it depends**. [^2] 
 
-[^1] I am actually not sure which iteration of my blog is this. Trying to think out loud... I had one built-in on my original tomzorz.me site, then one on tumblr, one on blogger, two separate ones later, one on medium and maybe one more I thiiiink... So this might be blog iteration number 8. Wee.
+[^1]: I am actually not sure which iteration of my blog is this. Trying to think out loud... I had one built-in on my original tomzorz.me site, then one on tumblr, one on blogger, two separate ones later, one on medium and maybe one more I thiiiink... So this might be blog iteration number 8. Wee.
 
-[^2]  Wish I knew where I stole this from.
+[^2]:  Wish I knew where I stole this from.

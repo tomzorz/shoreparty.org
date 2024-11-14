@@ -364,6 +364,12 @@ main.tmpl-post .post-info {
   border-bottom: 1px dashed #e0e0e0;
 }
 
+main.tmpl-post blockquote p {
+  border-left: 2px solid black;
+  padding-left: 1rem;
+  color: #333333;
+}
+
 /* mobile */
 
 @media screen and (max-width: 1156px) {
