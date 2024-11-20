@@ -5,13 +5,13 @@ templateClass: tmpl-post
 
 <h1>{{ title }}</h1>
 
-<p class="post-info">Written by <a href="https://twitter.com/tomzorz_">Tamás Deme</a> on {{ page.date.toDateString() }}. {% if updated %}Updated on {{ updated.toDateString() }}.{% endif %}</p>
+<p class="post-info">Written by <a href="https://bsky.app/profile/tomzorz.me">Tamás Deme</a> on {{ page.date.toDateString() }}. {% if updated %}Updated on {{ updated.toDateString() }}.{% endif %}</p>
 
 {{ content | safe }}
 
 <p class="closeout"><em>shore party out</em></p>
 
-<p>💌 share this post on <a href="http://twitter.com/share?text=From @tomzorz_'s blog: {{ title }}&url=https://shoreparty.org{{ page.url }}">twitter</a>, <a href="http://www.reddit.com/submit?url=https://shoreparty.org{{ page.url }}">reddit</a> or <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://shoreparty.org{{ page.url }}">linkedin</a></p>
+<p>💌 share this post on <a href="https://bsky.app/intent/compose?text=From @tomzorz_'s blog: {{ title }}&url=https://shoreparty.org{{ page.url }}">bluesky</a>, <a href="http://www.reddit.com/submit?url=https://shoreparty.org{{ page.url }}">reddit</a> or <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://shoreparty.org{{ page.url }}">linkedin</a></p>
 
 <p><a href="{{ '/' | url }}">← Home</a></p>
 
