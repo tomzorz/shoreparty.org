@@ -2,7 +2,7 @@
 title: Things without windows on Windows
 description: "Where should binaries, command line tools and similar things live on Windows? We should figure it out."
 date: 2025-01-01
-updated: 2025-01-01
+updated: 2025-01-02
 tags:
   - windows
   - developer
@@ -66,6 +66,6 @@ Now, on the other hand, in 2025 we live in the world of large language models (L
 
 All this to say, let's simultaneously get an official recommendation going for ML models as well.
 
-[^1] I think a large part of the hate comes from the fact that the folder name has spaces in it. I wish they didn't. Same goes for `Documents and Settings`, although that was thankfully renamed later.
+[^1]: I think a large part of the hate comes from the fact that the folder name has spaces in it. I wish they didn't. Same goes for `Documents and Settings`, although that was thankfully renamed later.
 
-[^2] It's probably a fair question to ask: why do I want to just file-copy migrate my binaries, as opposed to re-install them via a script? My two main reasons are: a) I might have binaries I want that can't be re-acquired anymore; b) I want to easily migrate the binaries I have acquired manually.
+[^2]: It's probably a fair question to ask: why do I want to just file-copy migrate my binaries, as opposed to re-install them via a script? My two main reasons are: a) I might have binaries I want that can't be re-acquired anymore; b) I want to easily migrate the binaries I have acquired manually.
