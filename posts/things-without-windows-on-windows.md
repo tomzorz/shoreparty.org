@@ -27,7 +27,7 @@ Fun fact: my own collection of small binaries is named `um`, which I think origi
 
 There are of course, many completely valid reasons why we wouldn't want to use the `Program Files` folders as individual users. 
 
-First of all, we want to have a centralized and easy location to have all of these like tiny tools to be in. If we place them in `Program Files` there are a lot of things there that we don't manage but the system or other applications do, which also means it is **hard to find** these tools. Not having all of them collected in one place also makes it really **hard to move** these files around. Whenever developers blow away their entire system (which does tend to happen more often than with average users), they want to grab all of these tiny tools and just quickly move them to their new install. If they are scattered around in two different places and also mixed with of a bunch of different things that they don't manage, that makes that very hard to do.
+First of all, we want to have a centralized and easy location to have all of these tiny tools to be in. If we place them in `Program Files` there are a lot of things there that we don't manage but the system or other applications do, which also means it is **hard to find** these tools. Not having all of them collected in one place also makes it really **hard to move** them around. Whenever developers blow away their entire system (which does tend to happen more often than with average users), they want to grab all of these tiny tools and just quickly move them to their new install. If they are scattered around in two different places and also mixed with of a bunch of different things that they don't manage, that makes that very hard to do.
 
 ## It's not just about being nice
 
