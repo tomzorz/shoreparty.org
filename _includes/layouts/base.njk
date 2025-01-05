@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +26,7 @@
           <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
         {%- endfor %}
         </ul>
+        <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button>
         <div class="head-desc">ethical considerations of high frequency econometrics and decision making</div>
       </div>
     </header>
@@ -34,8 +35,12 @@
       {{ content | safe }}
     </main>
 
-
-    <footer></footer>
+    <footer>
+      <div class="holder">
+        <p>Copyright &copy; <span id="current-year"></span> Tamás Deme. All rights reserved.</p>
+        <script> document.getElementById('current-year').textContent = new Date().getFullYear(); </script>
+      </div>
+    </footer>
 
     <!-- Current page: {{ page.url | url }} -->
     <!-- Google Analytics -->
@@ -46,5 +51,41 @@
         </script>
         <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
+    <script>
+      function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+          if (localStorageTheme !== null) return localStorageTheme;
+          if (systemSettingDark.matches) return "dark";
+          return "light";
+      }
+
+      function updateButton({ buttonEl, isDark }) {
+          const newCta = isDark ? "Change to light theme" : "Change to dark theme";
+          // use an aria-label if you are omitting text on the button
+          // and using a sun/moon icon, for example
+          buttonEl.setAttribute("aria-label", newCta);
+          buttonEl.innerText = newCta;
+      }
+
+      function updateThemeOnHtmlEl({ theme }) {
+          document.querySelector("html").setAttribute("data-theme", theme);
+      }
+
+      const button = document.querySelector("[data-theme-toggle]");
+      const localStorageTheme = localStorage.getItem("theme");
+      const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+      let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+      updateButton({ buttonEl: button, isDark: currentThemeSetting === "dark" });
+      updateThemeOnHtmlEl({ theme: currentThemeSetting });
+
+      button.addEventListener("click", (event) => {
+          const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+          localStorage.setItem("theme", newTheme);
+          updateButton({ buttonEl: button, isDark: newTheme === "dark" });
+          updateThemeOnHtmlEl({ theme: newTheme });
+          currentThemeSetting = newTheme;
+      }); 
+  </script>
   </body>
 </html>

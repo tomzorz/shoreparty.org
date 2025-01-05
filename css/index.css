@@ -1,13 +1,12 @@
 :root {
-  --red: #C5004A;
-  --darkred: #7F0036;
   --lightgray: #e0e0e0;
-  --gray: #C0C0C0;
-  --darkgray: #333;
+  --darkgray: #333333;
   --navy: #17050F;
   --blue: #082840;
-  --white: #fff;
+  --white: #ffffff;
 }
+
+/* original */
 * {
   box-sizing: border-box;
 }
@@ -101,10 +100,10 @@ pre {
 
 .highlight-line-isdir {
   color: #b0b0b0;
-  background-color: #222;
+  background-color: #222222;
 }
 .highlight-line-active {
-  background-color: #444;
+  background-color: #444444;
   background-color: hsla(0, 0%, 27%, .8);
 }
 .highlight-line-add {
@@ -195,12 +194,12 @@ pre {
 }
 a[href].tag,
 a[href].tag:visited {
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Warning */
 .warning {
-  background-color: #ffc;
+  background-color: #ffffcc;
   padding: 1em 0.625em; /* 16px 10px /16 */
 }
 .warning ol:only-child {
@@ -222,7 +221,7 @@ a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
-  color: #aaa;
+  color: #aaaaaa;
 }
 
 /* -------------------------------- CUSTOM STUFF -------------------------------- */
@@ -231,7 +230,7 @@ a[href].direct-link:focus:visited,
 
 html, body {
   font-family: 'Crimson Text', Garamond, serif;
-  color: black;
+  color: #000000;
   font-size: 22px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -297,7 +296,7 @@ ol.postlist li::before {
   display: inline;
   background-color: rgb(192,60,64);
   font-family: 'Futura BdCn BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: #ffffff;
   font-size: 1.2rem;
 }
 
@@ -353,7 +352,7 @@ main.tmpl-post code {
 main.tmpl-post .out-of-date-warning {
   background: lightcoral;
   padding: 8px;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
 }
 
@@ -383,4 +382,32 @@ main.tmpl-post blockquote p {
     text-align: center;
     max-width: 100%;
   }
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid #000000;
+  border-image: linear-gradient(to right,rgb(40,93,165), rgb(192,60,64)) 100% 1;
+  border-top-width: 0.25rem;
+}
+
+footer .holder {
+  max-width: 1156px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* switch */
+
+header button {
+  margin-top: 0.6rem;
+  text-transform: uppercase;
+  font-family: 'Futura MdCn BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: none;
+  color: var(--color-fg);
+  border: 2px solid var(--color-fg);
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
 }
