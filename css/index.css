@@ -88,6 +88,8 @@ pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   line-height: 1.5;
+  background-color: var(--lightgray-bg);
+  color: var(--darkgray);
 }
 pre {
   font-size: 14px;
@@ -106,8 +108,6 @@ pre {
   hyphens: none;
   padding: 1em;
   margin: .5em 0;
-  background-color: var(--lightgray-bg);
-  color: var(--darkgray);
 }
 .highlight-line {
   display: block;
