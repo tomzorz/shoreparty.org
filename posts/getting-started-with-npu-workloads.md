@@ -91,7 +91,7 @@ Except when we press that button, we get to wait around a lot...
 
 ![loading](/img/npu1/loading.png)
 
-How long? Well - unless you've used the language model before -, long enough to let Windows Update download and install the required language model. Which is... pretty long. Sadly there is no feedback, estimate or progress information on this that we could display for the users here (a feedback I've shared with the team at Microsoft) - but we as developers know what's going on so we can open the Settings app and navigate to Windows Update to observe what's going on:
+How long? Well - unless you've used the language model before -, long enough to let Windows Update download and install the required language model. Which is... pretty long. Until we add our own feedback - which is a bit beyond the scope of this getting started intro, we can open the Settings app and navigate to Windows Update to observe what's going on:
 
 ![I guess I should update my old. NET Framework too...](/img/npu1/wupdate.png)
 
