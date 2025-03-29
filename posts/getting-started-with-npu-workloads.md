@@ -6,8 +6,8 @@ tags:
   - windows
   - development
   - arm
-  - snapdragon
-  - remotedesktop
+  - winappsdk
+  - npu
 layout: layouts/post.njk
 ---
 
