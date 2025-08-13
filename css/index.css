@@ -264,11 +264,11 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, h7, a.postlist-link, header {
-  font-family: 'Futura Md BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Jost Md BT', 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a.tag {
-  font-family: 'Futura BdCn BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Jost BdCn BT', 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
 }
 
@@ -288,7 +288,7 @@ header .head-desc {
   clear: both;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  font-family: 'Futura Bk BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Jost Bk BT', 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header ul.nav li {
@@ -322,7 +322,7 @@ pre {
 ol.postlist li::before {
   display: inline;
   background-color: var(--postlist-bg);
-  font-family: 'Futura BdCn BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Jost BdCn BT', 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
   font-size: 1.2rem;
 }
@@ -431,7 +431,7 @@ header button {
   margin-top: 0.85rem;
   margin-left: 0.75rem;
   text-transform: uppercase;
-  font-family: 'Futura Bk BT', 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Jost Bk BT', 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   background: none;
   color: var(--color-fg);
