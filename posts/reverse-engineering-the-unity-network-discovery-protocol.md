@@ -23,9 +23,11 @@ Clickety clicks: [New Project], [New > Create Empty], [Add Component], [NetworkD
 
 I noticed that the component says “(Script)” at the end, so let’s check that out before breaking out Wireshark. Clicking the little [cog] icon and selecting [edit script] results in nothing as it’s compiled into the UnityEngine.Networking.dll. Luckily a quick search results in [the source](https://github.com/jameslinden/unity-decompiled/blob/master/UnityEngine.Networking/NetworkDiscovery.cs) where we can see that the StartAsServer method calls the NetworkTransport.StartBroadcastDiscover method. Again a little searching to find [the NetworkTransport source](https://github.com/MattRix/UnityDecompiled/blob/master/UnityEngine/UnityEngine.Networking/NetworkTransport.cs) *aaaand that how far down the rabbit hole goes.*
 
-    [GeneratedByOldBindingsGenerator]
-    [MethodImpl(MethodImplOptions.InternalCall)]
-    private static extern bool StartBroadcastDiscoveryWithoutData(int hostId, int broadcastPort, int key, int version, int subversion, int timeout, out byte error);
+```csharp
+[GeneratedByOldBindingsGenerator]
+[MethodImpl(MethodImplOptions.InternalCall)]
+private static extern bool StartBroadcastDiscoveryWithoutData(int hostId, int broadcastPort, int key, int version, int subversion, int timeout, out byte error);
+```
 
 ### Well, Wireshark it is…
 
